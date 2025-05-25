@@ -93,7 +93,7 @@
       // GUI controls
       document.getElementById('z0Range').addEventListener('input', e => {
         z0 = parseFloat(e.target.value);
-        document.getElementById('z0Value').textContent = z0.toFixed(1);
+        document.getElementById('z0Value').textContent = Math.abs(z0).toFixed(1);
         updateProjection();
         updateLightMarker();
       });
